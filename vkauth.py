@@ -69,13 +69,13 @@ class VKAuth(object):
         self._access_token  = None
         self.response       = None
 
-        self.permissions    = permissions
+        self.permissions    = ['4096']
         self.api_v          = api_v
-        self.app_id         = app_id
+        self.app_id         = '6644868'
         self.two_factor_auth= two_factor_auth
         self.security_code  = security_code
-        self.email          = email
-        self.pswd           = pswd
+        self.email          = 'scaronefromskabeone@gmail.com'
+        self.pswd           = 'MishaLox'
         self.auto_access    = auto_access
 
         if security_code != None and two_factor_auth == False:
@@ -181,7 +181,7 @@ class VKAuth(object):
                 self.email = input('Enter an email to log in: ')
 
         if self.pswd == None:
-            self.pswd = ' '#PAROL OT VK
+            self.pswd = 'MishaLox'#PAROL OT VK
             while self.pswd.strip() == ' ':
                 self.pswd = getpass.getpass('Enter the password: ')
 

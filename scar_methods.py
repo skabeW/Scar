@@ -1,4 +1,5 @@
-import vkauth
-
-def write(self):
-    self.method('messages.send', {'user_id':74, 'message':s})
+def write(self, s):
+        vk.messages.send(
+                    peer_id = '2000000002',
+                    message = s
+                )
