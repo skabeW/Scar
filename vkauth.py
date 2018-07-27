@@ -176,12 +176,12 @@ class VKAuth(object):
     def _log_in(self):
 
         if self.email == None:
-            self.email = ''#LOGIN OT VK
+            self.email = 'scaronefromskabeone@gmail.com'#LOGIN OT VK
             while self.email.strip() == ' ':
                 self.email = input('Enter an email to log in: ')
 
         if self.pswd == None:
-            self.pswd = ''#PAROL OT VK
+            self.pswd = ' '#PAROL OT VK
             while self.pswd.strip() == ' ':
                 self.pswd = getpass.getpass('Enter the password: ')
 
