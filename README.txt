@@ -4,3 +4,5 @@ Objectives:
 3. Reminders.							READY? NO	SkabeW
 4. Collection memes from Balash.				READY? NO	Proudoha
 5. MMR America.							READY? NO	Proudoha
+
+-LongPollApi  READY? NO
