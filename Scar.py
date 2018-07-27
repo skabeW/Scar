@@ -1,7 +1,7 @@
-import vkauth
+﻿import vkauth
 import vk_api
 import time
-
+#loh
 vkz = vkauth.VKAuth(['messages', 'users'], '6162462', '5.52')
 vkz.auth()
 
