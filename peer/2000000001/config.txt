@@ -1,0 +1,30 @@
+type
+	chat
+
+title
+	Ставочки [0 рябчиков Предупреждение] Ю/З 19 рябчиков, с днем рождения
+
+admin_id
+	90260838
+
+members_count
+	13
+
+id
+	1
+
+users
+	[179821488, 114108476, 156459202, 57925194, 152931626, 54912283, 57561725, 193466960, 294219284, 308368096, 237565027, 228630876, 455572881]
+
+push_settings
+	{'sound': 1, 'disabled_until': -1}
+
+photo_50
+	https://pp.userapi.com/c830109/v830109903/15333f/BguqWo3l6_w.jpg?ava=1
+
+photo_100
+	https://pp.userapi.com/c830109/v830109903/15333e/NXs3aKxkuiw.jpg?ava=1
+
+photo_200
+	https://pp.userapi.com/c830109/v830109903/15333d/S8RxMpl3FcU.jpg?ava=1
+

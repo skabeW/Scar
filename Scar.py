@@ -43,7 +43,34 @@ def main():
                 write(event.peer_id, 'Я впервые в этой конфе')
                 chatinfo = vk.messages.getChat(chat_id = event.peer_id - 2000000000)#Загружаем инфу из конфы
                 interface.InitConfig(event.peer_id, chatinfo) #Создать новую конфу
+            
+            
+            if event.text[0:3] == '[id' : #Проверка на карму
+                c = event.text[len(event.text)-1]
+                vk.messages.send(
+                    peer_id = event.peer_id,
+                    message = interface.karma(str(event.user_id), event.text[3:12], event.peer_id, c),
+                    forward_messages = event.message_id
+                )
+            
+            
+            
+            if event.text[0:5] == 'Карма' :
+                msg = interface.showcarma(event.peer_id)
+                print(msg)
                 
+                for i in range(len(msg)) :
+                    res = vk.users.get(user_ids = msg[i][:9], name_case = 'gen')
+                    msg[i] = 'У ' + res[0]['first_name'] + ' ' + res[0]['last_name'] + ' карма = ' + msg[i][msg[i].find('\t', 11): msg[i].rfind('\t')] + '\n'
+                
+                msg2 = ''
+                for i in range(len(msg)) :
+                    msg2 += msg[i]
+                vk.messages.send(
+                    peer_id = event.peer_id,
+                    message = msg2,
+                    forward_messages = event.message_id
+                )
 
 if __name__ == '__main__':
     main()
