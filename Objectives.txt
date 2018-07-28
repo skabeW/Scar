@@ -4,5 +4,6 @@ Objectives:
 3. Reminders.							READY? NO	SkabeW
 4. Collection memes from Balash.				READY? NO	Proudoha
 5. MMR America.							READY? NO	Proudoha
+6. News and weather every morning 				READY? NO	-
 
--LongPollApi  READY? NO
+-LongPollApi  READY? YES, BUT NOT TESTED
