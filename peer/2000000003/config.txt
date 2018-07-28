@@ -1,0 +1,27 @@
+type
+	chat
+
+title
+	Da4A.20!8 **.07.20!8
+
+admin_id
+	294219284
+
+members_count
+	9
+
+id
+	3
+
+users
+	[294219284, 237565027, 114108476, 308368096, 228630876, 179821488, 152931626, 54912283, 455572881]
+
+photo_50
+	https://pp.userapi.com/c831308/v831308081/146017/Gvh1fSJXtU0.jpg?ava=1
+
+photo_100
+	https://pp.userapi.com/c831308/v831308081/146016/Dw_nwtgGZhI.jpg?ava=1
+
+photo_200
+	https://pp.userapi.com/c831308/v831308081/146015/R1j0CI8euLU.jpg?ava=1
+

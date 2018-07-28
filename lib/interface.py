@@ -28,6 +28,8 @@ def InitConfig(peer_id, chatinfo) : #Создает все необходимы�
     
     f = open(file_path + 'members.txt', 'w')
     for i in chatinfo['users'] :
+        if len(str(i)) < 9 :
+            f.write(' ')
         f.write(str(i) + '\t0\t0\t' + str(int(date.day)-1) + '\n')
     f.close()
    
@@ -69,7 +71,10 @@ def karma(from_id, to_id, peer_id, c) : #Повышение Кармы
             c = -1
             
         x = int(data[b][12:len(data[b])-3]) + c
+        
         data[b] = to_id + '\t' + data[b][10] + '\t' + str(x) + '\t' + data[b][len(data[b])-3:]
+        if len(to_id) < 9 :
+            data[b] = ' ' + data[b]
 
         data[q] = data[q][:data[q].rfind('\t') + 1] + str(date.day) + '\n'
         

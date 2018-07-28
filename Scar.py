@@ -40,7 +40,7 @@ def main():
             print('id{}: "{}"'.format(event.user_id, event.text), end=' ') #log в консоль
             
             if not interface.NewChat(event.peer_id): #Проверка, новая ли конфа
-                write(event.peer_id, 'Я впервые в этой конфе')
+                write(event.peer_id, 'Шо ебанный рот погнали нахуй')
                 chatinfo = vk.messages.getChat(chat_id = event.peer_id - 2000000000)#Загружаем инфу из конфы
                 interface.InitConfig(event.peer_id, chatinfo) #Создать новую конфу
             
@@ -49,7 +49,7 @@ def main():
                 c = event.text[len(event.text)-1]
                 vk.messages.send(
                     peer_id = event.peer_id,
-                    message = interface.karma(str(event.user_id), event.text[3:12], event.peer_id, c),
+                    message = interface.karma(str(event.user_id), event.text[3:event.text.find('|')], event.peer_id, c),
                     forward_messages = event.message_id
                 )
             
