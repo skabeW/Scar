@@ -39,11 +39,10 @@ def main():
             print('id{}: "{}"'.format(event.user_id, event.text), end=' ')
             write(TEST_CONFA, 'Миша ' + event.text + '? а с ебалом че?')
             vk.messages.send(
-                    peer_id = TEST_CONFA,
+                    peer_id = event.peer_id,
                     message = 'Да я твой рот ебал',
                     forward_messages = event.message_id
                     )
-            print('\n'.join(str(value) for value in event))
 
 
 if __name__ == '__main__':
