@@ -35,6 +35,9 @@ def InitConfig(peer_id, chatinfo) : #Создает все необходимы�
    
 
 def karma(from_id, to_id, peer_id, c) : #Повышение Кармы 
+    if from_id == to_id :
+        return 'Жулик, не воруй'
+    
     file_path = os.getcwd() + '/peer/' + str(peer_id) + '/'
     f = open(file_path + 'members.txt', 'r')
     
